@@ -33,9 +33,8 @@
   <div id="content-wrapper">
     <div class="inner clearfix">
       <section id="main-content">
-      
-      
-      
+          
+          
     <h3 class="list list-top">DevOps系列</h3>
     <ul id="DevOps"></ul>
     <h3 class="list">Elastic系列</h3>
@@ -55,16 +54,23 @@
 <li><a href="https://mp.weixin.qq.com/s/TnvJlcnB51miI-t8N8IkXQ" target="_blank" rel="noreferrer">我为什么要写微信公众号</a></li>
 <li><a href="https://mp.weixin.qq.com/s/TnvJlcnB51miI-t8N8IkXQ" target="_blank" rel="noreferrer">我为什么要写微信公众号</a></li>
 <li><a href="https://mp.weixin.qq.com/s/TnvJlcnB51miI-t8N8IkXQ" target="_blank" rel="noreferrer">我为什么要写微信公众号</a></li>
+<li><a href="https://mp.weixin.qq.com/s/TnvJlcnB51miI-t8N8IkXQ" target="_blank" rel="noreferrer">我为什么要写微信公众号</a></li>
 </ul>
   
       </section>
 
       <aside id="sidebar">
+        <button onclick="javascrtpt:window.open('#')" style="width:100%;cursor:pointer">站内搜索</button>
+
+        <blockquote class="route">作者介绍</blockquote>
+        <p>Python码畜，Code搬运工，重原则，有态度</p>
+        <p>欢迎加我微信，聊技术，谈理想，悟人生</p>
+
         <blockquote class="route">个人微信号</blockquote>
         <img border="0" src="/images/z-qrcode.jpg" width="100%" height="100%" alt="zlcbs" />
 
         <blockquote class="route">归档列表</blockquote>
-        <div class="sidebar-list"><a href="/"> 精选文章</a></div>
+        <div class="sidebar-list"><a href="/a"> 精选文章</a></div>
         <div class="sidebar-list"><a href="/r/"> 日常记录</a></div>
       </aside>
     </div>
@@ -74,22 +80,25 @@
           <div class="copy"> © 2020 zlcbs Powered by<a herf="https://github.com/ops-coffee/demo/tree/master/ops-coffee-blog" target="_blank">ops-coffee</a></div>
     
           <div class="link">
-            <a href="/" target="_blank">关于本站</a>
-            <a href="/" target="_blank">回到首页</a>
+            <a href="#" target="_blank">关于本站</a>
+            <a href="/friends" title="友情链接" target="_blank">友情链接</a>
           </div>
         </div>
     </footer>
   </div>
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?84eb0bf97b63c13ada0074cb12a49b71";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 </body>
 
+<script>
+  document.getElementById("showMenu").onclick=function(){
+      if (document.getElementById("showMenu").innerText == 'MENU') {
+      document.getElementById("showMenu").innerText = 'BACK';
+      document.getElementById('sidebar').style.display="block";
+      document.getElementById('main-content').style.display="none";
+    } else {
+      document.getElementById("showMenu").innerText = 'MENU';
+      document.getElementById('sidebar').style.display="none";
+      document.getElementById('main-content').style.display="block";
+    }
+  }
+</script>
 </html>
