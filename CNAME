@@ -1,1 +1,8 @@
-zlcbs.com
+; <<>> DiG 9.11.3-1ubuntu1.1-Ubuntu <<>> www.zlcbs.com +nostats +nocomments +nocmd
+;; global options: +cmd
+;www.zlcbs.com.                 IN      A
+www.zlcbs.com.          600     IN      CNAME   zlcbs.github.io.
+zlcbs.github.io.        2802    IN      A       185.199.109.153
+zlcbs.github.io.        2802    IN      A       185.199.108.153
+zlcbs.github.io.        2802    IN      A       185.199.111.153
+zlcbs.github.io.        2802    IN      A       185.199.110.153
