@@ -1,4 +1,3 @@
 # zlcbs.github.io
-static blog website
 
-已弃用
+博客园 https://www.cnblogs.com/zlcbs/
